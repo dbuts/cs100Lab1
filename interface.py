@@ -22,7 +22,7 @@ class Interface:
                                    width=3,
                                    height=2,
                                    font=("Courier", 44),
-                                   command=lambda: onClick(i, j)).grid(row=i, column=j) for j in range(3)] for i in range(3)]
+                                   command=lambda i=i, j=j: onClick(i, j)).grid(row=i, column=j) for i in range(3)] for j in range(3)]
         self.frame.mainloop()
     
     def updateState(self, newBoard):
@@ -32,7 +32,6 @@ class Interface:
                 self.buttonGrid[r][c].config(text=newBoard[r][c])
 
 def testFunc(x, y):
-    print(str(x))
-    print(str(y))
+    print(str(x)+str(y))
 if __name__ == '__main__':
     Interface(testFunc)
