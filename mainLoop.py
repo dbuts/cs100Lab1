@@ -7,3 +7,5 @@ Main loop for the python project
 @author: Isaac Galang
 """
 
+import gameLogic
+import interface
