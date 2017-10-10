@@ -1,0 +1,25 @@
+___________________________________________
+Pseudocode for main loop of tictactoe game 
+Franklin Navarro 2017
+___________________________________________
+
+import libraries
+
+running = true
+initialize gui objects if necessary
+
+while running
+	initialize empty board
+	playing = true
+	player = 1
+	while playing
+		if player = 1
+			display "player one's turn"
+			wait for click
+			set click index to 'x'
+		else
+			display "player two's turn"
+			wait for click
+			set click index to 'o'
+		update graphics
+		player = -player

@@ -4,8 +4,11 @@ Created on Tue Oct 10 11:24:00 2017
 
 Main loop for the python project
 
-@author: Isaac Galang
+@author: Franklin Navarro
 """
 
 import gameLogic
 import interface
+
+while(true)
+	
