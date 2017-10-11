@@ -1,5 +1,5 @@
-# Hello World
+# Tic Tac Toe
 
-## We're making a project!
+## Simple Tic Tac Toe game to familiarize ourselves with git and python
 
-Isaac Galang, David Bzutlezr, Franklin Navarro
+Isaac Galang, David Butler, Franklin Navarro
