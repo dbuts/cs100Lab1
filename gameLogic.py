@@ -21,6 +21,7 @@ class gameBoard:
 			print "Cat's Scratch!"
 
 	def checkWin(self, charater, x, y):
+		turnCount++;
 		if(checkRow(self, character, x) or checkColumn(self, character, y) or checkDiagonal(self, character, x, y)):
 			return 1
 		elif(turnCount == 9):
