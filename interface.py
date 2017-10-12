@@ -22,7 +22,7 @@ class Interface:
                                    width=3,
                                    height=2,
                                    font=("Courier", 44),
-                                   command=lambda i=i, j=j: onClick(i, j, self, gameLogic)).grid(row=i, column=j) for i in range(3)] for j in range(3)]
+                                   command=lambda i=i, j=j: onClick(i, j, gameLogic, self)).grid(row=i, column=j) for i in range(3)] for j in range(3)]
         self.frame.mainloop()
     
     def updateState(self, newBoard):
