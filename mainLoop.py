@@ -9,6 +9,23 @@ Main loop for the python project
 
 import gameLogic
 import interface
+from time import sleep
 
-while(true)
+gb = gameLogic.gameBoard()
+
+def update(x, y, gameBoard, self):
+	gameBoard.updateBoard(x, y)
+	self.updateState(gb.board)
+	win = gb.checkWin(x,y)
+	if(win == 1):
+		self.win(gb.player)
+
+	elif(win == -1):
+		self.draw()
+
+
+gui = interface.Interface(update, gb)
+
+
+
 	

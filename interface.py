@@ -21,7 +21,7 @@ class Interface:
                                    width=3,
                                    height=2,
                                    font=("Courier", 44),
-                                   command=lambda i=i, j=j: onClick(i, j, gameLogic, self)) for i in range(3)] for j in range(3)]
+                                   command=lambda i=i, j=j: onClick(j, i, gameLogic, self)) for i in range(3)] for j in range(3)]
         for i in range(3):
             for j in range(3):
                 self.buttonGrid[i][j].grid(row=i, column=j)
@@ -35,6 +35,8 @@ class Interface:
         self.updateState([[' ' for _ in range(3)] for _ in range(3)])
     def win(self, char):
         self.updateState([[char, '\'', 's'], [' ', ' ', ' '], ['W', 'I', 'N']])
+    def draw(self):
+        self.updateState([[' ', ' ', ' '], ['T', 'I', 'E'], [' ', ' ', ' ']])
 
 def testFunc(x, y, gameLogic, interface):
     if x == y:
